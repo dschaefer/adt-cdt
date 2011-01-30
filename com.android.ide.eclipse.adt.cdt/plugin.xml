@@ -154,5 +154,48 @@
             type="com.android.ide.eclipse.adt.cdt.launchConfigurationType">
       </launchDelegate>
    </extension>
+   <extension
+         point="org.eclipse.debug.ui.launchConfigurationTypeImages">
+      <launchConfigurationTypeImage
+            configTypeID="com.android.ide.eclipse.adt.cdt.launchConfigurationType"
+            icon="icons/obj16/c_app.gif"
+            id="com.android.ide.eclipse.adt.cdt.launchConfigurationTypeImage">
+      </launchConfigurationTypeImage>
+   </extension>
+   <extension
+         point="org.eclipse.debug.ui.launchConfigurationTabGroups">
+      <launchConfigurationTabGroup
+            class="com.android.ide.eclipse.adt.cdt.internal.launch.NDKLaunchConfigurationTabGroup"
+            id="com.android.ide.eclipse.adt.cdt.launchConfigurationTabGroup"
+            type="com.android.ide.eclipse.adt.cdt.launchConfigurationType">
+      </launchConfigurationTabGroup>
+   </extension>
+   <extension
+         point="org.eclipse.debug.ui.launchConfigurationTabs">
+      <tab
+            class="com.android.ide.eclipse.adt.cdt.internal.launch.NDKMainTab"
+            group="com.android.ide.eclipse.adt.cdt.launchConfigurationTabGroup"
+            id="com.android.ide.eclipse.adt.cdt.mainTab"
+            name="Main">
+      </tab>
+      <tab
+            class="org.eclipse.debug.ui.sourcelookup.SourceLookupTab"
+            group="com.android.ide.eclipse.adt.cdt.launchConfigurationTabGroup"
+            id="com.android.ide.eclipse.adt.cdt.sourceTab"
+            name="Source">
+         <placement
+               after="com.android.ide.eclipse.adt.cdt.mainTab">
+         </placement>
+      </tab>
+      <tab
+            class="org.eclipse.debug.ui.CommonTab"
+            group="com.android.ide.eclipse.adt.cdt.launchConfigurationTabGroup"
+            id="com.android.ide.eclipse.adt.cdt.commonTab"
+            name="Common">
+         <placement
+               after="com.android.ide.eclipse.adt.cdt.sourceTab">
+         </placement>
+      </tab>
+   </extension>
 
 </plugin>
