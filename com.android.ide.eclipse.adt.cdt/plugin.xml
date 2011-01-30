@@ -133,5 +133,26 @@
          </action>
       </objectContribution>
    </extension>
+   <extension
+         point="org.eclipse.debug.core.launchConfigurationTypes">
+      <launchConfigurationType
+            id="com.android.ide.eclipse.adt.cdt.launchConfigurationType"
+            modes="debug"
+            name="Android Native"
+            public="true">
+      </launchConfigurationType>
+   </extension>
+   <extension
+         point="org.eclipse.debug.core.launchDelegates">
+      <launchDelegate
+            delegate="com.android.ide.eclipse.adt.cdt.internal.launch.NDKLaunchConfigurationDelegate"
+            id="com.android.ide.eclipse.adt.cdt.launchDelegate"
+            modes="debug"
+            name="Android Native"
+            sourceLocatorId="org.eclipse.cdt.debug.core.sourceLocator"
+            sourcePathComputerId="org.eclipse.cdt.debug.core.sourcePathComputer"
+            type="com.android.ide.eclipse.adt.cdt.launchConfigurationType">
+      </launchDelegate>
+   </extension>
 
 </plugin>
