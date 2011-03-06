@@ -4,7 +4,7 @@ import org.eclipse.debug.ui.AbstractLaunchConfigurationTabGroup;
 import org.eclipse.debug.ui.ILaunchConfigurationDialog;
 import org.eclipse.debug.ui.ILaunchConfigurationTab;
 
-public class NDKLaunchConfigurationTabGroup extends
+public class NDKLaunchTabGroup extends
 		AbstractLaunchConfigurationTabGroup {
 
 	@Override

@@ -145,7 +145,7 @@
    <extension
          point="org.eclipse.debug.core.launchDelegates">
       <launchDelegate
-            delegate="com.android.ide.eclipse.adt.cdt.internal.launch.NDKLaunchConfigurationDelegate"
+            delegate="com.android.ide.eclipse.adt.cdt.internal.launch.NDKLaunchDelegate"
             id="com.android.ide.eclipse.adt.cdt.launchDelegate"
             modes="debug"
             name="Android Native"
@@ -165,7 +165,7 @@
    <extension
          point="org.eclipse.debug.ui.launchConfigurationTabGroups">
       <launchConfigurationTabGroup
-            class="com.android.ide.eclipse.adt.cdt.internal.launch.NDKLaunchConfigurationTabGroup"
+            class="com.android.ide.eclipse.adt.cdt.internal.launch.NDKLaunchTabGroup"
             id="com.android.ide.eclipse.adt.cdt.launchConfigurationTabGroup"
             type="com.android.ide.eclipse.adt.cdt.launchConfigurationType">
       </launchConfigurationTabGroup>
